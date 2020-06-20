@@ -1,0 +1,2 @@
+# zpmMobileTests
+Rozetka aplication testing
