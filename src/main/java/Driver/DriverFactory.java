@@ -23,7 +23,7 @@ public class DriverFactory {
             case EMULATOR: {
                 DesiredCapabilities capabilities = new DesiredCapabilities();
                 capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
-                capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
+                capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "Appium");
                 capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator-5554");
                 capabilities.setCapability(MobileCapabilityType.APP, new File("app/rozetka_4.5.1.apk").getAbsolutePath());
                 capabilities.setCapability("appPackage", "ua.com.rozetka.shop");

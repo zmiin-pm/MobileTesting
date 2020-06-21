@@ -9,11 +9,15 @@ public class MainPage extends BasePage {
     @FindBy(id = "ua.com.rozetka.shop:id/main_tv_to_catalog")
     MobileElement buttonCatalog;
 
-    public CatalogPage getCatalog() {
+    public MainPage refresh() {
         logo.click();           // to refresh main page (close auto menu)
+        return this;
+    }
+
+    public CatalogPage getCatalog() {
         buttonCatalog.click();
         try {
-            Thread.sleep(5000);
+            Thread.sleep(3000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
