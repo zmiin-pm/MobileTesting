@@ -1,3 +1,5 @@
+package Pages;
+
 import Driver.DriverFactory;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
@@ -14,7 +16,7 @@ public class BasePage {
     @FindBy(className = "android.widget.RelativeLayout")
     List<MobileElement> mainMenuItems;
 
-    protected BasePage() {
+    public BasePage() {
         PageFactory.initElements(new AppiumFieldDecorator(
                 DriverFactory.getDriver()), this);
     }

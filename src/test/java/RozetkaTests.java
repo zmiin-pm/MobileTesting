@@ -1,5 +1,9 @@
 import Driver.DeviceName;
 import Driver.DriverFactory;
+import Pages.BasePage;
+import Pages.BasketPage;
+import Pages.MainPage;
+import Pages.SupportPage;
 import io.appium.java_client.android.AndroidDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -46,6 +50,14 @@ public class RozetkaTests {
                 .addItemToBasket(3)
                 .getBasketPage();
         Assert.assertEquals(basket.countAddedItems(), 3);
+    }
+
+    @Test(priority = 3)
+    public void isWomenClothesPageOpen() {
+        SupportPage support = new MainPage()
+                .getSupport();
+        Assert.assertTrue(support.checkCategoryName());
+
     }
 }
 

@@ -1,3 +1,5 @@
+package Pages;
+
 import io.appium.java_client.MobileElement;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.FindBy;
